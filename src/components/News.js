@@ -73,7 +73,7 @@ export class News extends Component {
             return <div className="col-md-3 my-1" key={element.url}>
               <NewsItem title={element.title ? element.title.slice(0, 45) + "..." : ""} 
               description={element.description ? element.description.slice(0, 60) + "..." : ""} 
-              imageUrl={element.urlToImage} newsUrl={element.url} author={element.author} date={element.publishedAt} />
+              imageUrl={element.urlToImage} newsUrl={element.url} author={element.author} date={element.publishedAt} source = {element.source.name} />
             </div>
           })}
         </div>
