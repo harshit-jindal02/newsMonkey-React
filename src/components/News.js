@@ -38,7 +38,6 @@ export class News extends Component {
     let parsedData = await data.json();
     this.setState({
       articles : parsedData.articles,
-      page: this.state.page-1,
       loading: false
     })
   }
