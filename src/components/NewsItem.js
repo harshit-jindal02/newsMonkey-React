@@ -5,7 +5,7 @@ export class NewsItem extends Component {
     let {title, description, imageUrl, newsUrl, author, date, source} = this.props;
     return (
       <div>
-        <div className="card">
+        <div className="card my-1">
             <img src={imageUrl ? imageUrl : "https://cdn.pixabay.com/photo/2015/02/15/09/33/news-636978_1280.jpg"} className="card-img-top" alt="..."/>
             <div className="card-body">
             <span className="position-absolute top-0 translate-middle badge rounded-pill bg-danger" style={{left: "85%", zIndex: "1"}}> {source} </span>
